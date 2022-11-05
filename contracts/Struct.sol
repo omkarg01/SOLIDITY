@@ -13,5 +13,7 @@ contract TodoList {
         list.push(TodoItem(_text, true));
     }
 
-    
+    function update(uint i, string memory text) public {
+        list[i].text = text;
+    }
 }
