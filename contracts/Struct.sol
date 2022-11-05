@@ -16,4 +16,8 @@ contract TodoList {
     function update(uint i, string memory text) public {
         list[i].text = text;
     }
+
+    function get() public view returns (TodoItem[] memory) {
+        return list;
+    }
 }
